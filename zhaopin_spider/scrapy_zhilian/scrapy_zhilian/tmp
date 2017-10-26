@@ -1,0 +1,34 @@
+
+
+
+
+
+职位名称：//div[@class="bread_crumbs"]//a[3]/strong   # 导航条里面获取的
+福利：//div[@class="fixed-inner-box"]//span/text()   # span列表
+
+主体部分：//div[@class="terminalpage-left"]
+./ul/li/strong
+薪资：//div[@class="terminalpage-left"]/ul/li[1]/strong
+工作区域 （城市）：//div[@class="terminalpage-left"]/ul/li[2]/strong
+经验 ：//div[@class="terminalpage-left"]/ul/li[5]/strong
+学历：//div[@class="terminalpage-left"]/ul/li[6]/strong
+人数：//div[@class="terminalpage-left"]/ul/li[7]/strong
+发布日期：//div[@class="terminalpage-left"]/ul/li[3]/strong
+职位信息 ：//div[@class="tab-inner-cont"]/p   # p列表
+工作地点：//div[@class="tab-inner-cont"]//h2/text()  # 需要去去回车
+公司信息 //div[@class="terminalpage-right"]
+
+公司名称 //div[@class="terminalpage-right"]//p[@class="company-name-t"]//a/text()
+公司性质 //div[@class="terminalpage-right"]//ul/li[2]/strong
+
+
+判断 li长度是否是5，如果是5就有网址
+//div[@class="terminalpage-right"]//ul/li
+
+公司网址 //div[@class="terminalpage-right"]//ul/li[4]/strong
+如果没有 网址为空
+
+            sql = '''insert into lagouq values(null,"%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s","%s")on duplicate key update ''' \
+          '''area=values(area),salary=values(salary),exp=values(exp),edu=values(edu),num=values(num),time=values(time),otherq=values(otherq),welfare=values(welfare)''' \
+          ''',info=values(info),local=values(local),co_url=values(co_url),co_type=values(co_type)''' % \
+          '''(item['name'], item['co_name'], item['area'], item['salary'],item['exp'],item['edu'], item['num'], item['time'],'',item['welfare'],item['info'], item['local'], item['co_url'], item['co_type'],item['spider_name'])'''

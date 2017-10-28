@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="renderer" content="webkit">   
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="job_detail.css">
+<title>{{pos.name}}-{{pos.co_name}}-{{pos.spider_name}}</title>
+
+<!-- 静态加载css样式 -->
+{% load static from staticfiles %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/job_detail.css' %}">
+<script src="{% static 'js/jquery-1.12.4.min.js' %}"></script>
+
+</head>
+<body>
+    <input id="serverTime" value="1508980306697" type="hidden">
+    <!-- 页面主体START -->
+    <div class="position-head" data-companyid="16875">
+        <div class="position-content ">
+            <div class="position-content-l">
+                <div class="job-name" >
+                    <div class="company">{{pos.co_name}}</div>
+                    <span class="name">{{pos.name}}</span>
+                    <div class="marEdit">
+                    </div>
+                </div>
+                <dd class="job_request">
+                    <p>
+                        <span class="salary">{{pos.salary}} </span>
+                        <span>/{{pos.area}}  /</span>
+                        <span>{{pos.exp}}  /</span>
+                        <span>{{pos.edu}}  /</span>
+                        <span>{{pos.num}}/</span>
+                    </p>
+                    <p class="publish_time">{{pos.time}}</p>
+                </dd>
+            </div>
+        </div>
+    </div>
+    <div class="ceil" style="display: none;">
+        <div class="ceil-content">
+            <span class="ceil-job">java开发工程师 /</span>
+            <span class="ceil-salary">10k-15k</span>
+            <div class="ceil-right"></div>
+        </div>
+    </div>
+<div class="container clearfix" id="container">
+    <div class="content_l fl">
+        <dl class="job_detail" id="job_detail">
+            <dt class="clearfix join_tc_icon">
+            </dt>
+            <dd class="job-advantage">
+                <span class="advantage">职位诱惑：</span>
+                <p>{{pos.welfare}}</p>
+            </dd>
+            <dd class="job_bt">
+                <h3 class="description">职位描述：</h3>
+                <div>
+                    {{pos.info}}
+
+                </div>
+            </dd>
+            <dd class="job-address clearfix">
+                <h3 class="address">工作地址</h3>
+                <div class="work_addr">
+                    {{pos.local}}
+                </div>
+            </dd>
+        </dl>
+
+    </div>
+<div class="content_r">
+    <dl class="job_company" id="job_company">
+    <dt>
+    <div>
+    <h2 class="fl">
+    {{pos.co_name}}
+    <span class="dn">拉勾认证企业</span>
+    </h2>
+    </div>
+    </a>
+    </dt>
+    <dd>
+    <ul class="c_feature">
+    <li>
+    {{pos.co_type}}
+    <span class="hovertips">领域</span>
+    </li>
+    <li>
+    <a href="{{pos.co_url}}" target="_blank" rel="nofollow">{{pos.co_url}}</a>
+    <span class="hovertips">公司主页</span>
+    </li>
+    </ul>
+    </dd>
+    </dl>
+
+<!-- 页面主体END -->
+<!-- 公共html -->
+
+</body>
+</html>

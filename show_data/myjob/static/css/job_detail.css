@@ -1,0 +1,3504 @@
+
+body {
+	line-height:22px
+}
+.fixed {
+	position:fixed!important;
+	top:0;
+	*position:absolute!important
+}
+.dn {
+	display:none
+}
+.clear {
+	clear:both
+}
+.c9 {
+	color:#999
+}
+.c7 {
+	color:#777
+}
+.c5 {
+	color:#555
+}
+.c3 {
+	color:#333
+}
+.cr {
+	color:#fe6161
+}
+.f24 {
+	font-size:24px
+}
+.f20 {
+	font-size:20px
+}
+.f18 {
+	font-size:18px
+}
+.f16 {
+	font-size:16px
+}
+.f14 {
+	font-size:14px
+}
+.mb10 {
+	margin-bottom:10px
+}
+.mb20 {
+	margin-bottom:20px
+}
+.mb0 {
+	margin-bottom:0!important
+}
+.mb50 {
+	margin-bottom:50px
+}
+.mt20 {
+	margin-top:20px
+}
+/*!common/components/jquery-colorbox-custom/jquery-colorbox.css*/
+@charset "utf-8";
+	#colorbox,#cboxOverlay,#cboxWrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:9999;
+	overflow:hidden
+}
+#cboxOverlay {
+	position:fixed;
+	width:100%;
+	height:100%
+}
+#cboxMiddleLeft,#cboxBottomLeft {
+	clear:left
+}
+#cboxContent {
+	position:relative
+}
+#cboxLoadedContent {
+	overflow:auto;
+	-webkit-overflow-scrolling:touch
+}
+#cboxTitle {
+	margin:0
+}
+#cboxLoadingOverlay,#cboxLoadingGraphic {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%
+}
+#cboxPrevious,#cboxNext,#cboxClose,#cboxSlideshow {
+	cursor:pointer
+}
+.cboxPhoto {
+	float:left;
+	margin:auto;
+	border:0;
+	display:block;
+	max-width:none;
+	-ms-interpolation-mode:bicubic
+}
+.cboxIframe {
+	width:100%;
+	height:100%;
+	display:block;
+	border:0
+}
+#colorbox,#cboxContent,#cboxLoadedContent {
+	box-sizing:content-box;
+	-moz-box-sizing:content-box;
+	-webkit-box-sizing:content-box
+}
+#cboxOverlay {
+	background:url(//static.lagou.com/www/static/common/components/jquery-colorbox-custom/img/overlay_c2e5558.png) repeat 0 0
+}
+#colorbox {
+	outline:0
+}
+#cboxTopLeft {
+	width:13px;
+	height:13px;
+	background:#3a3a3a;
+	opacity:.5;
+	filter:alpha(opacity=50;
+	)
+}
+#cboxTopRight {
+	width:13px;
+	height:13px;
+	background:#3a3a3a;
+	opacity:.5;
+	filter:alpha(opacity=50;
+	)
+}
+#cboxBottomLeft {
+	width:13px;
+	height:13px;
+	background:#3a3a3a;
+	opacity:.5;
+	filter:alpha(opacity=50;
+	)
+}
+#cboxBottomRight {
+	width:13px;
+	height:13px;
+	background:#3a3a3a;
+	opacity:.5;
+	filter:alpha(opacity=50;
+	)
+}
+#cboxMiddleLeft {
+	width:13px;
+	background:#3a3a3a;
+	opacity:.5;
+	filter:alpha(opacity=50;
+	)
+}
+#cboxMiddleRight {
+	width:13px;
+	background:#3a3a3a;
+	opacity:.5;
+	filter:alpha(opacity=50;
+	)
+}
+#cboxTopCenter {
+	height:13px;
+	background:#3a3a3a;
+	opacity:.5;
+	filter:alpha(opacity=50;
+	)
+}
+#cboxBottomCenter {
+	height:13px;
+	background:#3a3a3a;
+	opacity:.5;
+	filter:alpha(opacity=50;
+	)
+}
+#cboxContent {
+	overflow:hidden;
+	background:#fff
+}
+.cboxIframe {
+	background:#fff
+}
+#cboxError {
+	padding:50px;
+	border:1px solid #ccc
+}
+#cboxLoadedContent {
+	margin-top:44px
+}
+#cboxTitle {
+	font-size:18px;
+	color:#fff;
+	background:#00b38a;
+	height:44px;
+	width:100%;
+	text-indent:1em;
+	position:absolute;
+	top:0;
+	left:0;
+	line-height:44px
+}
+#cboxTitle span {
+	padding-left:15px
+}
+#cboxCurrent {
+	position:absolute;
+	bottom:4px;
+	left:58px;
+	color:#949494
+}
+#cboxLoadingOverlay {
+	background:url(//static.lagou.com/www/static/common/components/jquery-colorbox-custom/img/loading_background_acf427e.png) no-repeat center center
+}
+#cboxLoadingGraphic {
+	background:url(//static.lagou.com/www/static/common/components/jquery-colorbox-custom/img/loading_e6611f8.gif) no-repeat center center
+}
+#cboxPrevious,#cboxNext,#cboxSlideshow,#cboxClose {
+	border:0;
+	padding:0;
+	margin:0;
+	overflow:visible;
+	width:auto;
+	background:0
+}
+#cboxPrevious:active,#cboxNext:active,#cboxSlideshow:active,#cboxClose:active {
+	outline:0
+}
+#cboxSlideshow {
+	position:absolute;
+	bottom:4px;
+	right:30px;
+	color:#0092ef
+}
+#cboxPrevious {
+	position:absolute;
+	bottom:0;
+	left:0;
+	background:url(//static.lagou.com/www/static/common/components/jquery-colorbox-custom/img/controls_74ddda3.png) no-repeat;
+	width:19px;
+	height:19px;
+	text-indent:-9999px
+}
+#cboxPrevious:hover {
+	background-position:-75px -25px
+}
+#cboxNext {
+	position:absolute;
+	bottom:0;
+	left:27px;
+	background:url(//static.lagou.com/www/static/common/components/jquery-colorbox-custom/img/controls_74ddda3.png) no-repeat;
+	width:19px;
+	height:19px;
+	text-indent:-9999px
+}
+#cboxNext:hover {
+	background-position:-50px -25px
+}
+#cboxClose {
+	position:absolute;
+	top:12px;
+	right:12px;
+	background:url(//static.lagou.com/www/static/common/components/jquery-colorbox-custom/img/controls_74ddda3.png) no-repeat;
+	width:19px;
+	height:19px;
+	text-indent:-9999px
+}
+#cboxClose:hover {
+	}.cboxIE #cboxTopLeft,.cboxIE #cboxTopCenter,.cboxIE #cboxTopRight,.cboxIE #cboxBottomLeft,.cboxIE #cboxBottomCenter,.cboxIE #cboxBottomRight,.cboxIE #cboxMiddleLeft,.cboxIE #cboxMiddleRight {
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)
+}
+/*!common/components/popup/popup.less*/
+.popup {
+	font:14px/22px "Hiragino Sans GB","Microsoft Yahei",SimSun,Arial;
+	color:#555;
+	padding:36px 30px;
+	width:440px;
+	overflow:hidden
+}
+.popup h4 {
+	font-size:24px;
+	font-weight:400;
+	text-align:center;
+	margin:0 0 25px
+}
+.popup p {
+	margin:0 0 25px
+}
+.popup p.mid {
+	text-align:center
+}
+.popup a {
+	color:#00b38a;
+	text-decoration:none
+}
+.popup .btn_s,.popup .btn {
+	font-size:20px;
+	background:#00b38a;
+	padding:0 25px;
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+	height:37px;
+	color:#fff;
+	border:0;
+	line-height:37px;
+	transition:background .2s ease-in 0s
+}
+.popup .btn_s:hover,.popup .btn:hover {
+	background:#00a57f
+}
+.popup .enter_msg {
+	width:280px;
+	margin:0 auto;
+	overflow:hidden;
+	font-size:18px
+}
+.popup .reset_password {
+	color:#555;
+	font-size:16px;
+	margin-left:25px;
+	line-height:37px
+}
+.popup .error_msg {
+	background:url(//static.lagou.com/www/static/common/components/popup/img/lb_error_2e20d03.png) 0 5px no-repeat;
+	padding-left:45px;
+	width:380px;
+	margin:0 auto 25px;
+	text-align:left;
+	min-height:29px;
+	line-height:36px
+}
+.popup .btn_addPic {
+	display:inline-block;
+	position:relative;
+	padding:0 12px;
+	height:37px;
+	overflow:hidden;
+	background:#00b38a;
+	color:#fff;
+	font-size:20px;
+	margin-bottom:25px;
+	text-align:center;
+	cursor:pointer;
+	transition:background .2s ease-in 0s
+}
+.popup .btn_addPic:hover {
+	background:#00a57f
+}
+.popup .btn_addPic_hover {
+	background:#00a57f
+}
+.popup .btn_addPic span {
+	display:block;
+	line-height:37px
+}
+.popup .filePrew {
+	display:block;
+	position:absolute;
+	top:0;
+	left:0;
+	width:145px;
+	height:37px;
+	font-size:100px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	cursor:pointer
+}
+.popup input[type=text],.popup input[type=password] {
+	background:#f3f3f3
+}
+/*!job-detail/modules/position-head/main.less*/
+.activeIcon {
+	position:absolute;
+	top:-13px;
+	right:-90px;
+	width:80px;
+	height:36px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/position-head/img/position_pro_09b232f.png) no-repeat;
+	margin-left:10px;
+	z-index:999
+}
+.position-head {
+	background-color:#f2f5f4;
+	padding:30px 0 11px;
+	width:100%;
+	min-width:1024px
+}
+.position-head .position-content {
+	position:relative;
+	width:1024px;
+	height:174px;
+	margin:0 auto
+}
+.position-head .position-content .position-content-l {
+	float:left;
+	max-width:696px
+}
+.position-head .position-content .position-content-l .job-name {
+	margin:0 0 13px
+}
+.position-head .position-content .position-content-l .job-name .company {
+	margin:-2px 0 8px 0;
+	font-size:14px;
+	color:#555;
+	position:relative;
+	left:2px
+}
+.position-head .position-content .position-content-l .job-name .name {
+	position:relative;
+	font-size:36px;
+	color:#333;
+	line-height:36px
+}
+.position-head .position-content .position-content-l .job-name .outline_tag {
+	color:#999;
+	line-height:36px
+}
+.position-head .position-content .position-content-l .job-name .marEdit {
+	position:relative;
+	display:inline-block
+}
+.position-head .position-content .position-content-l .job-name .marEdit .march-img {
+	position:absolute;
+	left:2px;
+	top:-26px
+}
+.position-head .position-content .position-content-l .job-name .marEdit .edit {
+	display:inline-block;
+	margin-left:11px;
+	font-size:16px;
+	color:#00b38a;
+	cursor:pointer
+}
+.position-head .position-content .position-content-l .job-name .marEdit .edit img {
+	vertical-align:-2px;
+	margin-right:2px
+}
+.position-head .position-content .position-content-l .job_request {
+	margin-top:2px;
+	font-size:18px;
+	color:#555
+}
+.position-head .position-content .position-content-l .job_request p {
+	margin-bottom:8px
+}
+.position-head .position-content .position-content-l .job_request p .salary {
+	color:#fd5f39
+}
+.position-head .position-content .position-content-l .job_request .position-label .labels {
+	float:left;
+	height:22px;
+	margin-right:8px;
+	padding:0 10px;
+	line-height:22px;
+	background-color:#fff;
+	color:#70797b;
+	font-size:12px;
+	border-radius:10px
+}
+.position-head .position-content .position-content-l .job_request .publish_time {
+	padding-top:10px;
+	font-size:14px;
+	color:#999
+}
+.position-head .position-content .position-content-r {
+	position:absolute;
+	right:0;
+	top:12px;
+	max-width:328px
+}
+.position-head .position-content .position-content-r .position-deal {
+	position:relative
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver {
+	position:relative;
+	float:right
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver .btn_apply {
+	margin-left:17px;
+	padding:0 30px;
+	border:1px solid #00b38a;
+	border-radius:3px;
+	height:44px;
+	line-height:44px;
+	font-size:18px;
+	background-color:#00b38a;
+	color:#fff;
+	cursor:pointer
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver .btn_apply:hover {
+	background-color:#00a57f;
+	border-color:#00a57f
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver .btn_sended {
+	margin-left:17px;
+	padding:0 30px;
+	border:1px solid #bfbfbf;
+	border-radius:3px;
+	height:44px;
+	line-height:44px;
+	font-size:18px;
+	background-color:#bfbfbf;
+	color:#fff;
+	cursor:default
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver .invite_link,.position-head .position-content .position-content-r .position-deal .resume-deliver .collection_link {
+	font-size:14px;
+	color:#019875;
+	float:right;
+	margin-left:10px;
+	margin-top:4px;
+	*margin-top:-22px;
+	line-height:1
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver .inviteCancel {
+	position:relative;
+	margin:14px -240px 0 0;
+	font-size:18px;
+	cursor:pointer
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver .inviteCancel .invi_info_box {
+	float:left;
+	width:336px;
+	margin-bottom:20px;
+	padding:0;
+	font-size:14px;
+	color:#777;
+	border:2px solid #f2f2f2;
+	text-decoration:none!important;
+	background:#fff;
+	position:absolute;
+	right:-32px;
+	top:37px;
+	display:none;
+	z-index:9999;
+	cursor:default
+}
+.position-head .position-content .position-content-r .position-deal .resume-deliver .inviteCancel div b {
+	color:#00b38a;
+	cursor:pointer;
+	font-style:normal
+}
+.position-head .position-content .position-content-r .position-deal .jd_collection {
+	float:right;
+	display:inline-block;
+	height:44px;
+	width:104px;
+	line-height:44px;
+	text-align:center;
+	border:1px solid #00b38a;
+	border-radius:3px;
+	background-color:#ebf0ef;
+	cursor:pointer;
+	font-size:14px;
+	color:#00b38a
+}
+.position-head .position-content .position-content-r .position-deal .jd_collection:hover {
+	color:#00a57f;
+	border-color:#00a57f
+}
+.position-head .position-content .position-content-r .position-deal .jd_collection i {
+	display:inline-block;
+	margin-right:6px;
+	vertical-align:-2px;
+	font-size:18px
+}
+.position-head .position-content .position-content-r .position-deal .jd_collection.collected {
+	border:1px solid #c6ced0;
+	color:#999
+}
+.position-head .position-content .position-content-r .position-deal .jd_collection.collected i {
+	color:#f4d03e
+}
+.position-head .position-content .position-content-r .position-deal .jd_collection.march-collect {
+	background-color:#00b38a;
+	color:#fff
+}
+.position-head .position-content .position-content-r .position-deal .jd_collection.march-collect.collected {
+	background-color:#ebf0ef;
+	color:#999
+}
+.position-head .position-content .position-content-r .position-deal .jd_collection.loadingBgColor {
+	background-color:#ebf0ef
+}
+.position-head .position-content .position-content-r .position-deal .send {
+	height:44px;
+	padding:0 30px;
+	background-color:#00b38a;
+	border:1px solid #00b38a;
+	border-radius:3px;
+	color:#fff;
+	font-size:18px;
+	vertical-align:-2px
+}
+.position-head .position-content .position-content-r .resume-select {
+	margin:16px 0 11px
+}
+.position-head .position-content .position-content-r .resume-select .resume {
+	float:right;
+	margin-left:34px;
+	cursor:pointer;
+	line-height:28px
+}
+.position-head .position-content .position-content-r .resume-select .resume span {
+	color:#333;
+	text-decoration:underline
+}
+.position-head .position-content .position-content-r .resume-select .resume span i {
+	display:inline-block;
+	font-size:28px;
+	vertical-align:-7px
+}
+.position-head .position-content .position-content-r .resume-select .online-resume {
+	position:relative
+}
+.position-head .position-content .position-content-r .resume-select .online-resume .select-radio {
+	position:absolute;
+	display:inline-block;
+	width:12px;
+	height:12px;
+	left:-14px;
+	top:0;
+	border:1px solid #bfbfbf;
+	margin:7px 0;
+	border-radius:14px
+}
+.position-head .position-content .position-content-r .resume-select .online-resume .selected:before {
+	content:'';
+	position:absolute;
+	display:inline-block;
+	width:6px;
+	height:6px;
+	top:2px;
+	left:2px;
+	background-color:#00b38a;
+	border:1px solid #00b38a;
+	border-radius:7px
+}
+.position-head .position-content .position-content-r .resume-select .resume-attachment {
+	position:relative
+}
+.position-head .position-content .position-content-r .resume-select .resume-attachment .select-radio {
+	position:absolute;
+	display:inline-block;
+	width:12px;
+	height:12px;
+	left:-14px;
+	top:0;
+	border:1px solid #bfbfbf;
+	margin:7px 0;
+	border-radius:14px
+}
+.position-head .position-content .position-content-r .resume-select .resume-attachment .selected:before {
+	content:'';
+	position:absolute;
+	display:inline-block;
+	width:6px;
+	height:6px;
+	top:2px;
+	left:2px;
+	background-color:#00b38a;
+	border:1px solid #00b38a;
+	border-radius:7px
+}
+.position-head .position-content .position-content-r .resume-select .default-resume span:before {
+	content:"";
+	position:relative;
+	display:inline-block;
+	top:-1px;
+	left:-11px;
+	width:6px;
+	height:6px;
+	border:1px solid #00b38a;
+	border-radius:100%;
+	background-color:#00b38a
+}
+.position-head .position-content .position-content-r .tool-icon {
+	float:right
+}
+.position-head .position-content .position-content-r .tool-icon .report_button,.position-head .position-content .position-content-r .tool-icon .jd_share,.position-head .position-content .position-content-r .tool-icon .jd_rountline_share {
+	position:relative;
+	float:left;
+	width:40px;
+	height:20px;
+	text-align:center
+}
+.position-head .position-content .position-content-r .tool-icon .report_button i,.position-head .position-content .position-content-r .tool-icon .jd_share i,.position-head .position-content .position-content-r .tool-icon .jd_rountline_share i {
+	font-size:20px;
+	line-height:20px;
+	color:#c6ced0;
+	cursor:pointer
+}
+.position-head .position-content .position-content-r .tool-icon .report_button .tool-name,.position-head .position-content .position-content-r .tool-icon .jd_share .tool-name,.position-head .position-content .position-content-r .tool-icon .jd_rountline_share .tool-name {
+	display:none;
+	position:absolute;
+	z-index:22;
+	bottom:30px;
+	left:0;
+	font-size:12px;
+	line-height:18px;
+	color:#555;
+	padding:0 3px;
+	text-align:center;
+	border:2px solid #b7b7b7;
+	background-color:#fff
+}
+.position-head .position-content .position-content-r .tool-icon .report_button:hover i,.position-head .position-content .position-content-r .tool-icon .jd_share:hover i,.position-head .position-content .position-content-r .tool-icon .jd_rountline_share:hover i {
+	color:#b7b7b7
+}
+.position-head .position-content .position-content-r .tool-icon .report_button:hover .tool-name,.position-head .position-content .position-content-r .tool-icon .jd_share:hover .tool-name,.position-head .position-content .position-content-r .tool-icon .jd_rountline_share:hover .tool-name {
+	display:block
+}
+.position-head .position-content .position-content-r .tool-icon .report_button i {
+	font-size:17px
+}
+.position-head .position-content .position-content-r .tool-icon .report_button .tool-name {
+	width:50px;
+	margin-left:-10px
+}
+.position-head .position-content .position-content-r .tool-icon .reported i {
+	color:#f88
+}
+.position-head .position-content .position-content-r .tool-icon .reported:hover i {
+	color:#f88
+}
+.position-head .position-content .position-content-r .tool-icon .jd_share {
+	border-left:1px solid #e1e1e1
+}
+.position-head .position-content .position-content-r .tool-icon .jd_share .tool-name {
+	width:60px;
+	margin-left:-15px
+}
+.position-head .position-content .position-content-r .tool-icon .share_open i {
+	color:#00b38a
+}
+.position-head .position-content .position-content-r .tool-icon .share_open:hover i {
+	color:#00b38a
+}
+.position-head .position-content .position-content-r .tool-icon .jd_rountline_share {
+	border-left:1px solid #e1e1e1
+}
+.position-head .position-content .position-content-r .tool-icon .jd_rountline_share .tool-name {
+	width:180px;
+	margin-left:-75px
+}
+.position-head .position-content .position-content-r .tool-icon .rountline_share_open i {
+	color:#00b38a
+}
+.position-head .position-content .position-content-r .tool-icon .rountline_share_open:hover i {
+	color:#00b38a
+}
+.position-head .no-label {
+	height:152px
+}
+.jd_share_success {
+	display:none;
+	opacity:0;
+	position:absolute;
+	left:-54px;
+	top:30px;
+	z-index:2;
+	width:120px;
+	height:120px;
+	padding:10px;
+	border:3px solid #00b38a;
+	border-radius:8px;
+	-webkit-transition:opacity .25s;
+	transition:opacity .25s;
+	background-color:#fff
+}
+.jd_share_success:after {
+	content:"";
+	position:absolute;
+	top:-16px;
+	left:64px;
+	width:0;
+	height:0;
+	border:7px solid transparent;
+	border-bottom-color:#00b38a
+}
+.jd_rountline_share_success {
+	display:none;
+	opacity:0;
+	position:absolute;
+	left:-54px;
+	top:30px;
+	z-index:2;
+	width:130px;
+	height:130px;
+	padding:5px;
+	border:3px solid #00b38a;
+	border-radius:8px;
+	-webkit-transition:opacity .25s;
+	transition:opacity .25s;
+	background-color:#fff
+}
+.jd_rountline_share_success:after {
+	content:"";
+	position:absolute;
+	top:-16px;
+	left:64px;
+	width:0;
+	height:0;
+	border:7px solid transparent;
+	border-bottom-color:#00b38a
+}
+.share_open .jd_share_success {
+	display:block;
+	opacity:1
+}
+#weixinQrcode {
+	width:120px;
+	height:120px
+}
+.jd_rountline_share_success img {
+	display:block
+}
+.rountline_share_open .jd_rountline_share_success {
+	display:block;
+	opacity:1
+}
+.ceil {
+	display:none;
+	position:fixed;
+	z-index:1001;
+	top:0;
+	left:0;
+	right:0;
+	height:70px;
+	background-color:rgba(242,245,244,.9);
+	overflow:hidden
+}
+.ceil .ceil-content {
+	width:1024px;
+	height:70px;
+	line-height:70px;
+	margin:0 auto;
+	font-size:18px
+}
+.ceil .ceil-content .ceil-job {
+	font-weight:700;
+	color:#333
+}
+.ceil .ceil-content .ceil-salary {
+	font-weight:700;
+	color:#fd5f39
+}
+.ceil .ceil-content .ceil-right {
+	display:inline-block;
+	float:right;
+	height:70px;
+	position:relative;
+	padding:12px 0
+}
+.ceil .ceil-content .ceil-right .resume-deliver {
+	position:relative;
+	float:right
+}
+.ceil .ceil-content .ceil-right .resume-deliver .btn_apply {
+	margin-left:17px;
+	padding:0 30px;
+	border:1px solid #00b38a;
+	border-radius:3px;
+	height:44px;
+	line-height:44px;
+	font-size:18px;
+	background-color:#00b38a;
+	color:#fff;
+	cursor:pointer
+}
+.ceil .ceil-content .ceil-right .resume-deliver .btn_apply:hover {
+	background-color:#00a57f;
+	border-color:#00a57f
+}
+.ceil .ceil-content .ceil-right .resume-deliver .btn_sended {
+	margin-left:17px;
+	padding:0 30px;
+	border:1px solid #bfbfbf;
+	border-radius:3px;
+	height:44px;
+	line-height:44px;
+	font-size:18px;
+	background-color:#bfbfbf;
+	color:#fff;
+	cursor:default
+}
+.ceil .ceil-content .ceil-right .resume-deliver .invite_link,.ceil .ceil-content .ceil-right .resume-deliver .collection_link {
+	font-size:14px;
+	color:#019875;
+	float:right;
+	margin-left:10px;
+	margin-top:4px;
+	*margin-top:-22px;
+	line-height:1
+}
+.ceil .ceil-content .ceil-right .resume-deliver .inviteCancel {
+	position:relative;
+	margin:14px -240px 0 0;
+	font-size:18px;
+	cursor:pointer
+}
+.ceil .ceil-content .ceil-right .resume-deliver .inviteCancel .invi_info_box {
+	float:left;
+	width:336px;
+	margin-bottom:20px;
+	padding:0;
+	font-size:14px;
+	color:#777;
+	border:2px solid #f2f2f2;
+	text-decoration:none!important;
+	background:#fff;
+	position:absolute;
+	right:-32px;
+	top:37px;
+	display:none;
+	z-index:9999;
+	cursor:default
+}
+.ceil .ceil-content .ceil-right .resume-deliver .inviteCancel div b {
+	color:#00b38a;
+	cursor:pointer;
+	font-style:normal
+}
+.ceil .ceil-content .ceil-right .jd_collection {
+	float:right;
+	display:inline-block;
+	height:44px;
+	width:104px;
+	line-height:44px;
+	text-align:center;
+	border:1px solid #00b38a;
+	border-radius:3px;
+	background-color:#ebf0ef;
+	cursor:pointer;
+	font-size:14px;
+	color:#00b38a
+}
+.ceil .ceil-content .ceil-right .jd_collection:hover {
+	color:#00a57f;
+	border-color:#00a57f
+}
+.ceil .ceil-content .ceil-right .jd_collection i {
+	display:inline-block;
+	margin-right:6px;
+	vertical-align:-2px;
+	font-size:18px
+}
+.ceil .ceil-content .ceil-right .jd_collection.collected {
+	border:1px solid #c6ced0;
+	color:#999
+}
+.ceil .ceil-content .ceil-right .jd_collection.collected i {
+	color:#f4d03e
+}
+.ceil .ceil-content .ceil-right .jd_collection.march-collect {
+	background-color:#00b38a;
+	color:#fff
+}
+.ceil .ceil-content .ceil-right .jd_collection.march-collect.collected {
+	background-color:#ebf0ef;
+	color:#999
+}
+.ceil .ceil-content .ceil-right .jd_collection.loadingBgColor {
+	background-color:#ebf0ef
+}
+.ceil .ceil-content .ceil-right .send {
+	height:44px;
+	padding:0 30px;
+	background-color:#00b38a;
+	border:1px solid #00b38a;
+	border-radius:3px;
+	color:#fff;
+	font-size:18px;
+	vertical-align:-2px
+}
+.loading2 {
+	display:inline-block;
+	width:16px;
+	height:16px;
+	overflow:hidden;
+	text-indent:-9999em;
+	border-radius:50%;
+	background:#00b38a;
+	background:-moz-linear-gradient(left,#00b38a 10%,rgba(255,255,255,0) 42%);
+	background:-webkit-linear-gradient(left,#00b38a 10%,rgba(255,255,255,0) 42%);
+	background:-o-linear-gradient(left,#00b38a 10%,rgba(255,255,255,0) 42%);
+	background:-ms-linear-gradient(left,#00b38a 10%,rgba(255,255,255,0) 42%);
+	background:linear-gradient(to right,#00b38a 10%,rgba(255,255,255,0) 42%);
+	position:relative;
+	top:3px;
+	-webkit-animation:revolve 1.4s infinite linear;
+	animation:revolve 1.4s infinite linear
+}
+.loading2:before {
+	width:50%;
+	height:50%;
+	background:#00b38a;
+	border-radius:100% 0 0;
+	position:absolute;
+	top:0;
+	left:0;
+	content:''
+}
+.loading2:after {
+	background:#ebf0ef;
+	width:75%;
+	height:75%;
+	border-radius:50%;
+	content:'';
+	margin:auto;
+	position:absolute;
+	top:0;
+	left:0;
+	bottom:0;
+	right:0
+}
+@-webkit-keyframes revolve {
+	0% {
+	-webkit-transform:rotate(0deg);
+	transform:rotate(0deg)
+}
+100% {
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg)
+}
+}@keyframes revolve {
+	0% {
+	-webkit-transform:rotate(0deg);
+	transform:rotate(0deg)
+}
+100% {
+	-webkit-transform:rotate(360deg);
+	transform:rotate(360deg)
+}
+}/*!job-detail/modules/tips-top/main.less*/
+.jd_invite_tip {
+	background:url(//static.lagou.com/www/static/job-detail/modules/tips-top/img/border-horizon_5687f93.png),url(//static.lagou.com/www/static/job-detail/modules/tips-top/img/border-vetical_331b114.png),url(//static.lagou.com/www/static/job-detail/modules/tips-top/img/border-horizon_5687f93.png),url(//static.lagou.com/www/static/job-detail/modules/tips-top/img/border-vetical_331b114.png);
+	background-repeat:repeat-x,repeat-y,repeat-x,repeat-y,no-repeat;
+	background-position:top,right,bottom,left,13px 30px;
+	background-color:#fbfbfc;
+	padding:26px 20px 25px 13px;
+	margin:18px 0 20px
+}
+.jd_invite_tip .tips-content-wrap .tips-content {
+	position:relative
+}
+.jd_invite_tip .tips-content-wrap .tips-content .left-img {
+	position:absolute;
+	top:50%;
+	width:61px;
+	-moz-transform:translateY(-50%);
+	-webkit-transform:translateY(-50%);
+	-o-transform:translateY(-50%);
+	-ms-transform:translateY(-50%);
+	transform:translateY(-50%)
+}
+.jd_invite_tip .tips-content-wrap .tips-content .right-tips {
+	margin-left:102px
+}
+.jd_invite_tip span {
+	color:#999;
+	display:block;
+	line-height:24px
+}
+.no-oneword span {
+	line-height:62px
+}
+.jd_invite_tip .jd_invite_title {
+	color:#333
+}
+.jd_invite_tip .jd_invite_cnt {
+	margin:10px 35px 0 0;
+	position:relative
+}
+.recieved_invite_tip .jd_invite_cnt {
+	position:relative;
+	display:block
+}
+.jd_invite_tip .jd_invite_icon,.recieved_invite_tip .recieved_invite_icon {
+	width:13px;
+	height:12px;
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/tips-top/img/plus_1be98ad.png);
+	background-repeat:no-repeat;
+	margin-top:3px
+}
+.jd_invite_wrap {
+	margin-top:6px;
+	color:#999
+}
+.recieved_invite_wrap {
+	width:541px
+}
+.jd_invite_tip .jd_invite_icon1,.recieved_invite_tip .recieved_invite_icon1 {
+	display:inline-block;
+	background-position:-34px -6px;
+	margin-right:15px;
+	margin-left:42px
+}
+.recieved_invite_tip .recieved_invite_icon1 {
+	margin-left:0
+}
+.jd_invite_tip .jd_invite_icon2,.recieved_invite_tip .recieved_invite_icon2 {
+	background-position:-65px -6px
+}
+.recieved_invite_tip .recieved_invite_icon2 {
+	bottom:-10px
+}
+.jd_invite_clear {
+	clear:both
+}
+/*!job-detail/modules/job-info/main.less*/
+.module-container {
+	margin-top:10px
+}
+.job_detail dt {
+	padding-right:35px;
+	position:relative
+}
+.job_detail dt em {
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/title_arrow_ead2465.png) no-repeat;
+	width:6px;
+	height:8px;
+	position:absolute;
+	margin:-6px 0 0 -26px;
+	*margin:-6px 0 0 -21px
+}
+.job_detail dt h1 div {
+	font-size:14px;
+	line-height:14px;
+	font-weight:400;
+	margin:0 0 10px -5px
+}
+.job_detail .edit {
+	width:25px;
+	height:25px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/c_edit_321f836.png) 0 1px no-repeat;
+	float:right;
+	margin:30px 0 0 20px
+}
+.job_detail dd {
+	padding:15px 0 10px;
+	color:#333;
+	word-wrap:break-word
+}
+.job-advantage .advantage {
+	font-size:16px;
+	color:#333;
+	font-weight:700
+}
+.job-advantage p {
+	margin-top:13px;
+	color:#333
+}
+.job_detail .job-address {
+	padding-top:25px;
+	margin-top:-26px;
+	margin-bottom:10px
+}
+.job_detail .job-address .address {
+	font-size:16px;
+	color:#333;
+	font-weight:700
+}
+.job_detail .job-address .work_addr #mapPreview {
+	float:right
+}
+.job_detail .job-address #miniMap {
+	display:none
+}
+.job_detail dd.job_bt {
+	margin-bottom:0;
+	padding-bottom:0
+}
+.job_bt h3.description {
+	font-size:16px;
+	font-weight:700;
+	color:#333;
+	line-height:16px;
+	margin-bottom:22px;
+	margin-top:5px
+}
+.job_detail dd.jd_publisher {
+	padding:5px 0 10px;
+	position:relative;
+	margin-top:38px;
+	margin-bottom:40px
+}
+.jd_publisher h3 {
+	width:90px;
+	height:22px;
+	margin:0 0 0 -45px;
+	position:absolute;
+	left:44px;
+	top:-24px;
+	z-index:2;
+	font-size:16px;
+	line-height:22px;
+	color:#333;
+	font-weight:700;
+	text-align:center
+}
+.jd_publisher div.border {
+	height:70px;
+	padding:14px 10px;
+	padding-left:0;
+	position:relative;
+	z-index:1
+}
+.jd_publisher div.border img {
+	position:absolute;
+	left:0;
+	top:14px;
+	-webkit-border-radius:30px;
+	-moz-border-radius:30px;
+	border-radius:30px
+}
+.jd_publisher .initial_avatar {
+	left:0;
+	top:14px
+}
+.jd_publisher .publisher_name {
+	float:left
+}
+.jd_publisher .publisher_name a:first-child:hover {
+	color:#555
+}
+.jd_publisher .publisher_name span.name {
+	float:left;
+	font-size:18px;
+	color:#333;
+	margin:10px 0 0 65px;
+	max-width:140px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis
+}
+.jd_publisher .publisher_name span.chat_me {
+	position:relative;
+	float:left;
+	font-size:18px;
+	color:#333;
+	width:25px;
+	height:25px;
+	margin:8px 0 0 5px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/icon-chat_4a70ffc.png) no-repeat 0 0;
+	cursor:pointer
+}
+.jd_publisher .edit {
+	color:#00b38a;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/jd_publisher_edit_88bc03f.png) 0 3px no-repeat;
+	float:left;
+	margin:5px 0 0 12px;
+	padding-left:15px;
+	width:40px
+}
+.jd_publisher .publisher_name span.pos {
+	clear:left;
+	float:left;
+	font-size:14px;
+	color:#999;
+	margin:5px 0 5px 65px;
+	max-width:120px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis
+}
+#protect {
+	float:right;
+	width:356px;
+	height:71px;
+	margin-right:30px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/protect_ad83d43.png) no-repeat 0 0
+}
+.publisher_data {
+	position:absolute;
+	top:12px;
+	right:-22px
+}
+.publisher_data div {
+	position:relative;
+	padding-left:27px;
+	padding-right:23px;
+	float:left
+}
+.publisher_data div .data {
+	color:#333
+}
+.publisher_data span.data_title {
+	font-size:14px;
+	color:#555;
+	max-width:100px;
+	margin:0 auto;
+	padding-right:5px;
+	margin-bottom:4px
+}
+.publisher_data span.data_title i {
+	display:inline-block;
+	width:15px;
+	height:16px;
+	margin-left:2px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/icon-mark_fc1e516.png) no-repeat 1px 0;
+	vertical-align:sub;
+	cursor:pointer
+}
+.publisher_data em {
+	float:left;
+	width:1px;
+	height:60px;
+	background:#f3f3f3;
+	margin-top:10px
+}
+.publisher_data>span {
+	padding:0 20px;
+	float:left;
+	margin-top:10px
+}
+.publisher_data div span {
+	display:block;
+	text-align:center
+}
+.publisher_data div span.data {
+	font-size:16px;
+	color:#333;
+	margin-bottom:2px
+}
+.publisher_data div span.tip {
+	font-size:12px;
+	color:#999;
+	position:relative
+}
+.publisher_data div span .light_tip {
+	color:#fd5f38
+}
+.publisher_data div span.tip_text {
+	display:none;
+	padding:2px;
+	width:220px;
+	background:#fff;
+	border:2px solid #d4d4d4;
+	position:absolute;
+	top:-30px;
+	left:-5px;
+	color:#999
+}
+.initial_avatar {
+	width:60px;
+	height:60px;
+	color:#ffe45d;
+	text-align:center;
+	font-style:normal;
+	font-size:26px;
+	line-height:60px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/publisher_c5b292d.png) no-repeat;
+	position:absolute;
+	left:30px;
+	top:20px
+}
+.initial_avatar.c1 {
+	color:#ffe45d;
+	background-position:0 0
+}
+.initial_avatar.c2 {
+	color:#80e89e;
+	background-position:-83px 0
+}
+.initial_avatar.c3 {
+	color:#70aafa;
+	background-position:-165px 0
+}
+.initial_avatar.c4 {
+	color:#ff8590;
+	background-position:-250px 0
+}
+.job_detail dd.jd_resume {
+	position:relative;
+	margin:12px 0 0;
+	padding:9px 0 9px 36px;
+	background-color:#f2f2f2;
+	overflow:inherit
+}
+.jd_resume strong {
+	font-weight:700
+}
+.jd_resume a {
+	text-decoration:underline
+}
+.jd-icon {
+	display:inline-block;
+	width:36px;
+	height:50px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/resume_status_43d796b.png) 0 -1px no-repeat
+}
+.jd-qr {
+	width:83px
+}
+.jd-qr .dropdown_menu {
+	width:299px;
+	height:152px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/jd-qr-tip_4577434.png) no-repeat;
+	color:#fff;
+	display:block;
+	padding:12px 8px 8px 5px;
+	margin:50px 0 0 -36px;
+	opacity:0;
+	visibility:hidden;
+	-webkit-transition:.25s;
+	transition:.25s;
+	position:relative;
+	z-index:1;
+	cursor:default
+}
+.resume_status_bind.open>.dropdown_menu {
+	margin-top:63px!important
+}
+.open>.dropdown_menu {
+	margin-top:78px!important;
+	*margin:70px 0 0 -220px!important;
+	opacity:1;
+	visibility:visible
+}
+.resume_status_bind {
+	position:relative;
+	cursor:pointer;
+	background-position:-136px -1px;
+	margin-top:9px
+}
+.resume_status_none {
+	background-position:-207px -1px
+}
+.resume_status_online {
+	background-position:0 -1px
+}
+.resume_status_attachment {
+	background-position:-64px -1px
+}
+.js-line {
+	display:inline-block;
+	height:68px;
+	width:1px;
+	background-color:#e6e6e6;
+	margin:0 23px
+}
+.resume_status {
+	padding:9px 0;
+	line-height:25px
+}
+.resume_status i {
+	margin-right:17px;
+	vertical-align:middle
+}
+.resume_status .resume_default,.resume_status .resume_default_none {
+	color:#333
+}
+.resume_status .resume_up_time {
+	color:#999
+}
+.jd-btns {
+	position:absolute;
+	right:33px;
+	top:30px;
+	color:#999
+}
+.jd-btns a {
+	color:#999
+}
+.jd-btns a:hover {
+	color:#019875
+}
+.resumeShowAll .js-line {
+	height:93px
+}
+.resumeShowAll .resume_list {
+	width:410px
+}
+.resumeShowAll .jd-btns {
+	position:static
+}
+.job_detail .btn {
+	display:inline-block;
+	font-size:16px;
+	color:#fff;
+	background:#00b38a url(//static.lagou.com/www/static/job-detail/modules/job-info/img/arrow_54116b2.png) 88px center no-repeat;
+	padding:5px 40px 5px 15px;
+	margin:10px 0 0
+}
+.job_detail .btn:hover {
+	background-color:#00a57f;
+	color:#fff
+}
+.job_detail .btn_apply {
+	padding:0 22px;
+	font-size:20px;
+	height:43px;
+	line-height:43px;
+	background-image:none;
+	margin-top:25px
+}
+.job_detail .btn_sended {
+	cursor:default;
+	background:#bfbfbf;
+	font-size:20px;
+	height:43px;
+	line-height:43px;
+	margin-top:25px;
+	padding:0 22px
+}
+.job_detail .btn_sended:hover {
+	background:#bfbfbf
+}
+.invite_link,.collection_link {
+	font-size:14px;
+	color:#019875;
+	float:right;
+	margin-left:10px;
+	margin-top:4px;
+	*margin-top:-22px;
+	line-height:1
+}
+.inviteCancel {
+	position:relative;
+	margin:36px 20px 0 0;
+	font-size:20px;
+	cursor:pointer
+}
+.inviteCancel .invi_info_box {
+	float:left;
+	width:336px;
+	margin-bottom:20px;
+	padding:0;
+	font-size:14px;
+	color:#777;
+	border:2px solid #f2f2f2;
+	text-decoration:none!important;
+	background:#fff;
+	position:absolute;
+	right:-32px;
+	top:37px;
+	display:none;
+	z-index:9999;
+	cursor:default
+}
+.inviteCancel div b {
+	color:#00b38a;
+	cursor:pointer;
+	font-style:normal
+}
+.invi_info {
+	position:relative
+}
+.invi_info span {
+	position:absolute;
+	width:17px;
+	height:10px;
+	top:-10px;
+	left:258px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/invitation_info_top_3f0548c.png) no-repeat
+}
+.invi_info_box h3 {
+	margin:21px 24px
+}
+.invi_info_box h4 {
+	margin:12px 24px
+}
+ul.invi_info_choose {
+	float:left;
+	margin:0 0 0 22px;
+	padding:0
+}
+ul.invi_info_choose li {
+	list-style:none;
+	width:100px;
+	margin:0;
+	padding:0;
+	width:140px;
+	line-height:34px
+}
+ul.invi_info_choose li input {
+	display:none
+}
+ul.invi_info_choose li label {
+	display:inline-block;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/invi_radio_d91b24d.png) no-repeat;
+	padding-left:22px;
+	height:17px;
+	line-height:17px;
+	cursor:pointer
+}
+ul.invi_info_choose li label.seled {
+	background-position:0 0
+}
+ul.invi_info_choose li label.unsel {
+	background-position:0 -17px
+}
+.invi_info_box input.reason {
+	width:268px;
+	height:38px;
+	margin-top:20px;
+	padding:6px 10px;
+	margin:14px 22px 0;
+	border:2px solid #f1f1f1;
+	border-radius:5px;
+	outline:0;
+	font:20px/32px Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+	line-height:38px
+}
+.invi_info_box .err_tip {
+	color:red;
+	padding-left:24px;
+	margin:3px 0 5px;
+	visibility:hidden
+}
+.invi_info_box .invi_btn_bg {
+	background:#fafafa;
+	height:62px;
+	text-align:center;
+	line-height:68px;
+	width:100%
+}
+.invi_info_box .invi_btn_yes {
+	background:#00b88d;
+	width:92px;
+	height:37px;
+	color:#fff;
+	font-size:18px;
+	border-radius:3px
+}
+.job_detail dd.jd_deliver_tips {
+	font-size:16px;
+	line-height:26px;
+	padding:5px 35px 0
+}
+.job_detail dd.jd_deliver_tips p {
+	text-align:right
+}
+.job_detail dd.jd_deliver_tips p+p {
+	margin-top:2px
+}
+.job_detail dd.jd_deliver_tips .main_tips {
+	color:#333
+}
+.job_detail dd.jd_deliver_tips .main_tips .delivered_mum {
+	color:#00b38a
+}
+.job_detail dd.jd_deliver_tips .main_tips a {
+	color:#777;
+	text-decoration:underline
+}
+.job_detail dd.jd_deliver_tips .main_tips a:hover {
+	color:#00b38a
+}
+.job_detail dd.jd_deliver_tips .sub_tips {
+	color:#777
+}
+.job_detail dd.jd_deliver_tips .sub_tips .raised_num {
+	color:#ff7452
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx) {
+	.jd_publisher .publisher_name span.chat_me {
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/icon-chat@2x_a67ba9e.png);
+	background-size:25px 25px
+}
+#protect {
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/job-info/img/protect@2x_2ab345d.png);
+	background-size:356px 71px
+}
+}.job_bt {
+	font-size:14px;
+	line-height:22px
+}
+.job_bt p {
+	margin:1em 0
+}
+.job_bt strong {
+	font-weight:700
+}
+.job_bt em {
+	font-style:italic
+}
+.job_bt ol {
+	padding-left:2em;
+	list-style-type:decimal
+}
+.job_bt ul {
+	padding-left:2em;
+	list-style-type:disc
+}
+.job_bt .list-paddingleft-2 {
+	padding-left:30px
+}
+.job_bt .ueditor_underline {
+	text-decoration:underline
+}
+.job_bt .ueditor_left {
+	text-align:left
+}
+.job_bt .ueditor_right {
+	text-align:right
+}
+.job_bt .ueditor_center {
+	text-align:center
+}
+.job_bt .ueditor_indent2 {
+	text-indent:2em
+}
+.job_bt pre {
+	white-space:normal
+}
+/*!job-detail/modules/tips-bottom/main.less*/
+.tip_bottom_wrapper {
+	position:relative;
+	min-height:80px;
+	margin-top:30px;
+	padding:0;
+	background-color:#fffadc
+}
+.tip_bottom_wrapper .banner {
+	margin-left:35px;
+	margin-right:180px;
+	padding:16px 16px 14px 75px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/tips-bottom/img/icon_diamond_2df2fe0.png) no-repeat left center
+}
+.tip_bottom_wrapper .banner .title {
+	margin:0 0 5px;
+	width:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	-ms-text-overflow:ellipsis;
+	text-overflow:ellipsis;
+	font-size:18px;
+	color:#555
+}
+.tip_bottom_wrapper .banner .description {
+	margin:0;
+	width:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	-ms-text-overflow:ellipsis;
+	text-overflow:ellipsis;
+	font-size:14px;
+	color:#663118
+}
+.tip_bottom_wrapper .banner .description .em {
+	color:#00b88d
+}
+.tip_bottom_wrapper .banner .link {
+	position:absolute;
+	top:24px;
+	right:86px;
+	width:114px;
+	height:30px;
+	border:1px solid #00b38a;
+	text-align:center;
+	color:#00b38a;
+	font-size:14px;
+	line-height:30px;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
+}
+.tip_bottom_wrapper .banner .link:hover {
+	background-color:#00b38a;
+	color:#fff
+}
+.tip_bottom_wrapper .btn_close {
+	position:absolute;
+	right:10px;
+	top:10px;
+	width:15px;
+	height:15px;
+	background:transparent url(//static.lagou.com/www/static/job-detail/modules/tips-bottom/img/icon_close_170841b.png) no-repeat center center;
+	outline:0;
+	border:0;
+	cursor:pointer;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-o-transition:all .5s;
+	-ms-transition:all .5s;
+	transition:all .5s
+}
+.tip_bottom_wrapper .btn_close:hover {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg)
+}
+#paiTipBottom {
+	display:none
+}
+#paiTipBottom iframe {
+	display:block
+}
+#plusTipBottom {
+	display:none
+}
+#plusTipBottom .banner .link {
+	right:55px
+}
+/*!job-detail/modules/common/css/module.less*/
+.module-container {
+	border-top:1px solid #e8e8e8;
+	min-height:20px;
+	margin-top:40px;
+	position:relative
+}
+.module-container .module-title {
+	position:absolute;
+	left:0;
+	top:-11px;
+	color:#000;
+	font-size:18px;
+	padding-right:16px;
+	background-color:#fff
+}
+.module-container .checkAll {
+	position:absolute;
+	right:0;
+	top:-12px;
+	color:#00b38a;
+	font-size:14px;
+	background-color:#fff;
+	padding-left:10px
+}
+.module-container ul {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+/*!job-detail/modules/interview-review/main.less*/
+.interview_experience {
+	margin-top:10px
+}
+.interview_experience .reviews-area {
+	font-size:14px;
+	color:#555
+}
+.interview_experience .reviews-area .list-content .review-area {
+	padding:26px 0;
+	border-bottom:1px dashed #dce4e6
+}
+.interview_experience .reviews-area .list-content .review-area .review-avater {
+	width:50px;
+	float:left;
+	margin-right:14px;
+	text-align:center
+}
+.interview_experience .reviews-area .list-content .review-area .review-avater img {
+	height:50px;
+	width:50px;
+	border-radius:50px;
+	margin-bottom:10px
+}
+.interview_experience .reviews-area .list-content .review-area .review-avater a:hover {
+	color:#555;
+	cursor:text
+}
+.interview_experience .reviews-area .list-content .review-area .review-right {
+	width:615px;
+	float:left
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars {
+	margin-bottom:10px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul {
+	float:left
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li {
+	float:left;
+	margin-right:8px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li span {
+	float:left;
+	color:#999;
+	margin-top:2px;
+	margin-right:6px;
+	line-height:20px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li .stars {
+	float:left;
+	height:20px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li .stars .star {
+	width:20px;
+	height:20px;
+	margin-right:3px;
+	float:left;
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/interview-review/img/star_small_5c7dff2.png);
+	background-position:0 -60px;
+	display:block
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li .stars .star-1 {
+	background-position:0 0
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li .stars .star-2 {
+	background-position:0 -20px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li .stars .star-3 {
+	background-position:0 -20px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li .stars .star-4 {
+	background-position:0 -40px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars ul li .stars .star-5 {
+	background-position:0 -40px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-stars .review-date {
+	float:right;
+	font-size:12px;
+	color:#999;
+	line-height:20px;
+	margin-top:3px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-tags {
+	margin-bottom:10px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-tags .tag {
+	float:left;
+	padding:0 10px;
+	border:1px solid #dce4e6;
+	border-radius:15px;
+	font-size:12px;
+	margin-right:10px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-content {
+	margin-bottom:6px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-content .review-type {
+	display:inline-block;
+	color:#999
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-content .interview-process,.interview_experience .reviews-area .list-content .review-area .review-right .review-content .other-review {
+	display:inline
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-action .replied {
+	padding-right:10px;
+	border-right:1px solid #dce4e6;
+	color:#999
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-action .useful {
+	color:#00b38a;
+	position:relative;
+	cursor:pointer
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-action .reply {
+	color:#00b38a;
+	padding-right:10px;
+	border-right:1px solid #dce4e6
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-action .useful i {
+	text-align:center;
+	width:140px;
+	font:14px SimSun;
+	color:#777;
+	border:2px solid #f2f2f2;
+	background:#fff;
+	padding:3px;
+	position:absolute;
+	right:-160px;
+	top:-4px;
+	display:none
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply {
+	position:relative
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .triangleOut {
+	width:0;
+	height:0;
+	border-bottom:10px solid #dce4e6;
+	border-right:10px solid transparent;
+	position:absolute;
+	top:-8px;
+	left:16px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .triangleIn {
+	width:0;
+	height:0;
+	border-bottom:9px solid #fafafa;
+	border-right:9px solid transparent;
+	position:absolute;
+	top:-6px;
+	left:17px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .reply-area {
+	background-color:#fafafa;
+	border:1px solid #dce4e6;
+	border-radius:3px;
+	padding:14px 10px 20px;
+	overflow:hidden;
+	margin-top:10px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .reply-area img {
+	height:50px;
+	width:50px;
+	border-radius:50px;
+	margin-bottom:10px;
+	float:left;
+	margin-right:14px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .reply-area .reply-right {
+	width:528px;
+	float:left;
+	position:relative
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .reply-area .reply-right .reply-date {
+	position:absolute;
+	top:2px;
+	right:0;
+	color:#999;
+	font-size:12px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .reply-area .reply-right .reply-info {
+	color:#999;
+	margin-bottom:10px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .reply-editor .placeholder {
+	color:#b5b5b5
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .text-count {
+	color:#999;
+	font-size:12px;
+	text-align:right;
+	margin-top:5px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .text-count span {
+	color:#f94e4e
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .error {
+	float:left;
+	display:none
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .btn {
+	float:right;
+	width:75px;
+	height:35px;
+	font-size:18px;
+	line-height:36px;
+	text-align:center;
+	margin:15px 0 0
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .saveBtn {
+	float:right;
+	width:75px;
+	height:35px;
+	font-size:18px;
+	line-height:36px;
+	text-align:center;
+	margin:15px 0 0;
+	background-color:#00b38a;
+	color:#fff
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .cancelBtn {
+	float:right;
+	width:75px;
+	height:35px;
+	font-size:18px;
+	line-height:36px;
+	text-align:center;
+	margin:15px 0 0;
+	background-color:#fff
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply.reply-active .reply-editor {
+	border-color:#00b38a
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply.reply-active .triangleOut-editor {
+	border-bottom-color:#00b38a
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .triangleOut {
+	position:absolute;
+	top:-10px;
+	left:16px;
+	width:0;
+	height:0;
+	border-right:10px solid transparent;
+	border-bottom:10px solid #dce4e6
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .triangleIn {
+	position:absolute;
+	top:-8px;
+	left:17px;
+	width:0;
+	height:0;
+	border-right:9px solid transparent;
+	border-bottom:9px solid #fafafa
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .triangleOut-editor {
+	position:absolute;
+	top:-10px;
+	left:16px;
+	width:0;
+	height:0;
+	border-right:10px solid transparent;
+	border-bottom:10px solid #dce4e6;
+	top:1px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .triangleIn-editor {
+	position:absolute;
+	top:-8px;
+	left:17px;
+	width:0;
+	height:0;
+	border-right:9px solid transparent;
+	border-bottom:9px solid #fafafa;
+	top:3px;
+	border-bottom:9px solid #fff
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .reply-editor {
+	width:622px;
+	height:88px;
+	padding:10px;
+	margin-top:10px;
+	border:1px solid #dce4e6;
+	border-radius:3px;
+	font-size:14px;
+	resize:none;
+	overflow:auto
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply textarea.placeholder {
+	color:#b5b5b5;
+	font-size:14px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply textarea::-webkit-input-placeholder {
+	color:#b5b5b5;
+	font-size:14px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply textarea:-ms-input-placeholder {
+	color:#b5b5b5!important;
+	font-size:14px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply textarea::-moz-placeholder {
+	color:#b5b5b5;
+	font-size:14px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply textarea:-moz-placeholder {
+	color:#b5b5b5;
+	font-size:14px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .text-count {
+	margin-top:5px;
+	text-align:left;
+	color:#999;
+	font-size:12px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .text-count span {
+	color:#f94e4e
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .error {
+	display:none;
+	float:left;
+	margin-top:-16px;
+	padding-left:20px;
+	line-height:22px;
+	text-align:left;
+	color:#ff6a6a;
+	font-size:14px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/interview-review/img/error_727fcc2.png) 0 3px no-repeat
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .btn {
+	float:right;
+	width:75px;
+	height:35px;
+	margin:-12px 0 0 0;
+	border:0;
+	font-size:18px;
+	line-height:36px;
+	text-align:center
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .saveBtn {
+	float:right;
+	width:75px;
+	height:35px;
+	margin:-12px 0 0 0;
+	border:0;
+	font-size:18px;
+	line-height:36px;
+	text-align:center;
+	border-radius:3px;
+	background-color:#00b38a;
+	color:#fff
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .review-reply .cancelBtn {
+	float:right;
+	width:75px;
+	height:35px;
+	margin:-12px 0 0 0;
+	border:0;
+	font-size:18px;
+	line-height:36px;
+	text-align:center;
+	background-color:#fff
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .down,.interview_experience .reviews-area .list-content .review-area .review-right .up {
+	color:#00b38a;
+	text-decoration:underline;
+	font-size:12px;
+	position:relative;
+	margin-left:5px;
+	display:inline-block
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .down i,.interview_experience .reviews-area .list-content .review-area .review-right .up i {
+	width:10px;
+	height:5px;
+	display:inline-block;
+	margin-left:3px;
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/interview-review/img/arrow_281dd39.png)
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .down i {
+	background-position:0 -5px
+}
+.interview_experience .reviews-area .list-content .review-area .review-right .up i {
+	background-position:0 0
+}
+.interview_experience .reviews-area .list-content .review-area:last-child {
+	border-bottom:0;
+	padding-bottom:0
+}
+.interview_experience .reviews-area .list-loading {
+	width:120px;
+	height:20px;
+	margin:60px auto;
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/interview-review/img/loading_c3d8b73.gif)
+}
+.interview_experience .reviews-area .list-empty {
+	margin:80px 0;
+	text-align:center
+}
+.interview_experience .reviews-area .list-empty i {
+	display:inline-block;
+	height:45px;
+	width:45px;
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/interview-review/img/unhappy_d9b5db5.png);
+	vertical-align:middle;
+	margin-right:15px
+}
+.interview_experience .reviews-area .list-empty span {
+	display:inline-block
+}
+.interview_experience .reviews-area .list_empty_link {
+	color:#00b38a
+}
+/*!job-detail/modules/view-again/main.less*/
+.view_again {
+	padding-top:30px;
+	display:none
+}
+.view_again ul {
+	overflow:hidden
+}
+.view_again li {
+	float:left;
+	font-size:14px;
+	text-align:center
+}
+.view_again li .company-logo img {
+	margin:0 auto;
+	width:56px;
+	height:56px;
+	border:2px solid #f2f2f2
+}
+.view_again li .position {
+	color:#333;
+	width:110px;
+	display:block
+}
+.view_again li .position:hover {
+	color:#00b38a
+}
+.view_again li .salary {
+	color:#fd5f39
+}
+.view_again li .company-name {
+	color:#999;
+	width:110px;
+	display:block
+}
+.view_again li .company-name:hover {
+	cursor:default
+}
+.view_again li+li {
+	margin-left:32px
+}
+/*!job-detail/modules/job-company/main.less*/
+.job_company>dt {
+	position:relative;
+	padding-bottom:25px;
+	margin-bottom:-10px
+}
+.job_company dt a {
+	color:#555
+}
+.job_company .b2 {
+	border:2px solid #f2f2f2
+}
+#job_company .icon-glyph-valid {
+	width:16px;
+	height:18px;
+	margin-left:0;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-company/img/approve1_18935f1.png) no-repeat 0 0;
+	color:#fff;
+	vertical-align:bottom
+}
+#job_company .icon-glyph-valid:before {
+	display:none
+}
+#job_company .no-icon-glyph-valid {
+	width:16px;
+	height:18px;
+	margin-left:0;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-company/img/approve2_7accbbd.png) no-repeat 0 0;
+	color:#fff;
+	vertical-align:bottom
+}
+#job_company .no-icon-glyph-valid:before {
+	display:none
+}
+.job_company dt h2 {
+	margin-bottom:0;
+	font-size:18px;
+	line-height:18px;
+	color:#555
+}
+.job_company dt h2 i {
+	display:inline-block;
+	margin-left:-4px;
+	color:#00b38a;
+	font-size:14px
+}
+.job_company dt h2 .invalid {
+	color:#c1c1c1
+}
+.job_company dt div {
+	position:absolute;
+	bottom:5px;
+	padding:20px 0
+}
+.job_company dt span {
+	color:#555;
+	width:90px;
+	text-align:center;
+	position:absolute;
+	z-index:22;
+	background-color:#FFF;
+	margin:0 0 0 50px;
+	bottom:45px;
+	border:2px solid #d4d4d4;
+	padding:0 3px;
+	font-size:12px;
+	line-height:18px
+}
+.job_company>dd {
+	padding:10px 0
+}
+.job_company dd h4 {
+	margin:20px 0 10px;
+	font-size:14px;
+	font-weight:700
+}
+.job_company .c_feature li {
+	position:relative;
+	margin:0 0 16px;
+	color:#737373;
+	line-height:25px
+}
+.job_company .c_feature li .hovertips {
+	display:none;
+	padding:0 3px;
+	border:2px solid #b7b7b7;
+	background-color:#FFF;
+	color:#555;
+	font-size:12px;
+	line-height:18px
+}
+.job_company .c_feature li:hover .hovertips {
+	display:block;
+	position:absolute;
+	top:-20px;
+	left:0
+}
+.job_company .c_feature li .finance {
+	float:left;
+	margin-top:4px
+}
+.job_company .c_feature li .financeOrg {
+	margin-left:33px
+}
+.job_company .c_feature i {
+	display:inline-block;
+	margin-right:15px
+}
+.job_company .c_feature i.icon-glyph-doller {
+	font-size:15px
+}
+.job_company .c_feature a {
+	color:#737373
+}
+.job_company .c_feature a:hover {
+	color:#019875
+}
+.work_addr a {
+	color:#00b38a;
+	cursor:pointer
+}
+.work_addr a:hover {
+	text-decoration:underline
+}
+#miniMap {
+	width:280px;
+	height:200px;
+	overflow:hidden;
+	margin:0
+}
+#mapPopup {
+	width:600px;
+	height:430px
+}
+#mapPopup input[type=text],#mapPopup input[type=password] {
+	background-color:transparent
+}
+#fullMap {
+	width:600px;
+	height:400px;
+	overflow:hidden;
+	margin:0
+}
+@media only screen and (-webkit-min-device-pixel-ratio:2),only screen and (min--moz-device-pixel-ratio:2),only screen and (-o-min-device-pixel-ratio:2),only screen and (min-device-pixel-ratio:2),only screen and (min-resolution:192dpi),only screen and (min-resolution:2dppx) {
+	#job_company .icon-glyph-valid {
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/job-company/img/approve1@2x_22cb583.png);
+	background-size:16px 18px
+}
+#job_company .no-icon-glyph-valid {
+	background-image:url(//static.lagou.com/www/static/job-detail/modules/job-company/img/approve2@2x_655a319.png);
+	background-size:16px 18px
+}
+}/*!job-detail/modules/job-recommend/main.less*/
+.jobs_similar {
+	padding-top:8px
+}
+.jobs_similar_header {
+	margin:14px 0
+}
+.jobs_similar_header span {
+	position:relative;
+	display:inline-block;
+	*display:inline;
+	padding:0 10px 7px 0;
+	*padding-bottom:2px;
+	margin-right:-4px;
+	margin-bottom:-2px;
+	color:#555;
+	font-size:18px;
+	font-weight:700;
+	cursor:pointer
+}
+.jobs_similar_header span:after {
+	content:"";
+	position:absolute;
+	top:11px;
+	left:83px;
+	display:inline-block;
+	width:162px;
+	border-bottom:1px solid #e8e8e8
+}
+.jobs_similar_footer {
+	display:block;
+	color:#555;
+	height:35px;
+	line-height:35px;
+	background:#fafafa url(//static.lagou.com/www/static/job-detail/modules/job-recommend/img/similar_position_triangle_544444c.png) no-repeat 205px 10px;
+	margin-bottom:28px;
+	text-align:center
+}
+.nodata_similar_list {
+	background:#fbfbfb url(//static.lagou.com/www/static/job-detail/modules/job-recommend/img/nodata_similar_list_a87c090.png) center center no-repeat;
+	height:150px
+}
+.jobs_similar_detail .similar_list {
+	margin-top:-12px
+}
+.similar_list_item {
+	width:245px;
+	vertical-align:top;
+	border-bottom:1px dashed #e5e5e5;
+	position:relative
+}
+.similar_list_item a {
+	display:block;
+	padding:12px 0 14px
+}
+.similar_list_item:hover {
+	background-color:#fafafa
+}
+.similar_list_item:hover .similar_company_info {
+	background-color:#fff
+}
+.jd_delivery_list .similar_list_item:hover {
+	background-color:#fff
+}
+.similar_list_item_logo,.similar_list_item_pos {
+	width:167px;
+	float:left
+}
+.similar_list_item_logo {
+	width:60px;
+	margin-right:12px
+}
+.similar_list_item_logo img {
+	vertical-align:middle;
+	display:block;
+	border:2px solid #f2f2f2
+}
+.similar_list_item_pos h2 {
+	margin:0;
+	color:#333;
+	padding:0;
+	font-size:16px
+}
+.similar_list_item_pos p {
+	color:#e6775c;
+	margin:-2px 0 0 0;
+	padding:0;
+	font-size:16px
+}
+.similar_list_item_pos .similar_company_name {
+	width:167px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	font-size:12px;
+	color:#999
+}
+.similar_list_item_pos .similar_company_name span {
+	display:inline-block;
+	overflow:hidden
+}
+.similar_list_item_pos .similar_company_name .similar_company_name_span {
+	display:inline-block;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap;
+	width:95px
+}
+.similar_list_item_pos h2 {
+	width:167px;
+	text-overflow:ellipsis;
+	-o-text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:nowrap
+}
+.similar_list_item .similar_company_info {
+	border:1px solid #c9c9c9;
+	border-radius:3px;
+	width:280px;
+	padding:20px 0 0;
+	box-shadow:1px 2px 5px #ecebeb;
+	position:absolute;
+	z-index:9999;
+	left:0;
+	background:#fff
+}
+.similar_list_item .similar_company_info p {
+	margin:0;
+	padding-left:20px
+}
+.similar_list_item .similar_company_info p.last {
+	margin:0 0 20px
+}
+.similar_list_item .similar_company_label {
+	height:43px;
+	line-height:43px;
+	background-color:#fafafa;
+	margin-top:10px;
+	text-align:center
+}
+.similar_list_item .similar_company_label span {
+	border:1px solid #cdcdcd;
+	padding:3px;
+	margin:0 3px;
+	background-color:#fff
+}
+.similar_list_item .arr {
+	position:relative
+}
+.similar_list_item .similar_company_info .arr span {
+	position:absolute;
+	width:13px;
+	height:8px;
+	top:-27px;
+	left:130px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/job-recommend/img/arr_top_4db55d1.png) no-repeat
+}
+/*!job-detail/modules/popup/main.less*/
+.popup_jd input[type=text],.popup_jd input[type=password] {
+	border:2px solid #f1f1f1;
+	outline:0;
+	font-size:20px;
+	line-height:32px;
+	width:600px;
+	height:30px;
+	padding:6px 10px;
+	margin-top:20px;
+	transition:border .2s ease-in 0s
+}
+.popup_jd input[type=button],.popup_jd input[type=submit] {
+	outline:0;
+	cursor:pointer;
+	border:0
+}
+.popup_jd input[type=text]:focus,.popup_jd input[type=password]:focus {
+	border:2px solid #d4e2e4
+}
+.popup_jd textarea {
+	border:2px solid #f1f1f1;
+	width:600px;
+	height:260px;
+	outline:0;
+	resize:none;
+	font-size:20px;
+	line-height:32px;
+	padding:6px 10px;
+	transition:border .2s ease-in 0s
+}
+.popup_jd textarea:focus {
+	border:2px solid #d4e2e4
+}
+.popup_jd span.error {
+	display:block;
+	margin:5px 0 10px;
+	font-size:14px;
+	color:#ff6a6a;
+	text-align:left;
+	background:url(//static.lagou.com/www/static/job-detail/modules/popup/img/error_0b4953b.png) 0 3px no-repeat;
+	padding-left:20px;
+	line-height:22px
+}
+.popup_jd .btn {
+	margin-top:10px
+}
+#cboxContent {
+	overflow:visible
+}
+#colorbox,#cboxOverlay,#cboxWrapper {
+	overflow:visible
+}
+#setResume label.tipsInfo {
+	cursor:default
+}
+#setResume,#setResumeApply {
+	padding:30px 0 0;
+	width:502px
+}
+#setResume .btn_profile_save,#setResumeApply .btn_profile_save {
+	display:block;
+	margin:15px auto 0
+}
+#setResume td,#setResumeApply td {
+	padding-bottom:10px
+}
+#setResume td.f18,#setResumeApply td.f18 {
+	padding-left:30px
+}
+.resumeSetForm label {
+	float:left;
+	padding:8px 0 8px 30px
+}
+.resumeSetForm label span {
+	font-weight:700
+}
+.resumeSetForm label span.red {
+	font-weight:400;
+	color:#ff5151
+}
+.resumeSetForm label a {
+	font-weight:700;
+	color:#333
+}
+.resumeSetForm label a:hover {
+	text-decoration:underline;
+	color:#019875
+}
+.resumeSetForm div {
+	margin-right:30px
+}
+.resumeSetForm div a {
+	color:#555;
+	text-decoration:underline
+}
+.resumeSetForm div a:hover {
+	color:#019875
+}
+.resumeSetForm label.tipsInfo {
+	background-color:#fffde8;
+	width:472px;
+	margin-top:10px
+}
+.resumeSetForm .setBtns {
+	float:right;
+	padding:8px 0;
+	position:relative
+}
+.resumeSetForm span.error {
+	margin:0 20px 0 35px
+}
+#reUploadResume1 {
+	position:absolute;
+	left:35px;
+	left:15px\9;
+	top:8px;
+	width:90px;
+	width:110px\9;
+	height:25px;
+	opacity:0;
+	filter:alpha(opacity=0);
+	cursor:pointer
+}
+#reUploadResume2 {
+	position:absolute;
+	left:35px;
+	left:15px\9;
+	top:8px;
+	width:90px;
+	width:110px\9;
+	opacity:0;
+	filter:alpha(opacity=0);
+	cursor:pointer
+}
+#deliverResumeConfirm div {
+	line-height:28px;
+	margin-bottom:10px
+}
+#deliverResumeConfirm a {
+	margin-right:20px
+}
+#deliverResumeConfirm a.edit_field {
+	text-decoration:underline;
+	color:#555
+}
+#deliverResumeConfirm .confirm_field {
+	color:#e46a4a;
+	font-size:18px
+}
+#infoBeforeDeliverResume table {
+	margin-top:10px
+}
+#infoBeforeDeliverResume table td {
+	vertical-align:top
+}
+#infoBeforeDeliverResume .boxUpDown {
+	margin-top:-6px
+}
+#infoBeforeDeliverResume #box_expectCity {
+	left:-134px;
+	*left:158px;
+	*margin-top:50px
+}
+#infoBeforeDeliverResume input {
+	margin-top:10px
+}
+#infoBeforeDeliverResume input[type=text] {
+	width:166px;
+	background-color:#fff;
+	border:2px solid #f1f1f1
+}
+#infoBeforeDeliverResume input[type=text]:focus {
+	border:2px solid #c8e6de
+}
+#infoBeforeDeliverResume .redstar {
+	margin:23px 0 0
+}
+#infoBeforeDeliverResume a {
+	margin-top:20px
+}
+#infoBeforeDeliverResume input.profile_select_190 {
+	width:190px;
+	padding-right:50px;
+	border:0;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+	word-wrap:normal
+}
+#fileResumeUpload {
+	line-height:32px
+}
+#deliverResumesSuccess .share {
+	margin-top:20px;
+	overflow:hidden
+}
+#deliverResumesSuccess i.delay_deliver {
+	color:#777
+}
+#deliverResumesSuccess .jd_delivery {
+	text-align:center
+}
+#deliverResumesSuccess .weixin {
+	border:0;
+	margin:0;
+	background-color:#f7f7f7;
+	width:470px
+}
+#deliverResumesSuccess .weixin .qr_text {
+	font-size:14px;
+	padding-top:0;
+	line-height:24px;
+	color:#777
+}
+#deliverResumesSuccess .weixin .qr_text span {
+	font-size:14px;
+	display:inline-block
+}
+#deliverResumesSuccess .weixin .qr_text span.color9 {
+	font-size:14px;
+	color:#999;
+	margin-left:3px
+}
+#deliverResumesSuccess .weixin .qr_text h2 {
+	font-size:16px;
+	color:#333;
+	margin:0 0 10px
+}
+#deliverResumesSuccess .border0 {
+	border:0
+}
+#deliverResumesSuccess .count .delay_deliver {
+	font-style:normal;
+	color:#777;
+	margin-left:10px
+}
+#deliverResumesSuccess .count {
+	margin:0 0 15px
+}
+#deliverResumesSuccess #knowed {
+	display:inline-block;
+	height:40px;
+	padding:0 22px;
+	border-radius:2px;
+	cursor:pointer;
+	line-height:40px;
+	font-size:16px;
+	color:#fff;
+	background-color:#00b38a
+}
+#deliverResumesSuccess #recall {
+	color:#777;
+	text-decoration:underline;
+	margin-left:20px
+}
+#deliverResumesSuccess #recall:hover {
+	color:#019875
+}
+#deliverResumesSuccess #recall_time {
+	color:#777;
+	font-size:14px;
+	text-decoration:none
+}
+#sendNoResume form {
+	float:left;
+	margin:20px 0 0 50px
+}
+#sendNoResume .btn {
+	margin:20px 0 0
+}
+#reportbox .report_detail {
+	width:100%;
+	height:330px;
+	margin:0 auto
+}
+#reportbox .report_detail h2 {
+	color:#333;
+	font-size:18px;
+	font-weight:400;
+	margin:0 0 15px;
+	line-height:28px
+}
+#reportbox #report_submit {
+	width:100%
+}
+#reportbox #report_submit table {
+	width:100%;
+	height:100%
+}
+#reportbox #report_submit table tr td:first-child {
+	vertical-align:top;
+	padding-top:8px;
+	font-size:16px;
+	color:#333
+}
+#reportbox #report_submit table tr td a.report_select {
+	position:absolute;
+	top:0;
+	right:0;
+	display:block;
+	width:55px;
+	height:39px;
+	border-left:2px solid #f1f1f1
+}
+#reportbox #report_submit table tr td input[type=button] {
+	width:352px;
+	*width:345px;
+	height:39px;
+	color:#a9a9a9;
+	font-size:16px;
+	background:#fff;
+	margin:0 0 10px;
+	padding-left:10px;
+	text-align:left;
+	border:2px solid #f1f1f1;
+	outline:0;
+	cursor:pointer
+}
+#reportbox #report_submit table tr td textarea {
+	display:block;
+	width:328px;
+	*width:321px;
+	height:160px;
+	margin-bottom:8px;
+	padding:6px 10px;
+	border:2px solid #f1f1f1;
+	background:#fff;
+	overflow:auto;
+	font-size:16px;
+	line-height:24px;
+	color:#333;
+	outline:0
+}
+#reportbox #report_submit table tr td a.report_select em {
+	height:0;
+	width:0;
+	overflow:hidden;
+	font-size:0;
+	line-height:0;
+	border-width:8px 7px 0;
+	border-style:solid dashed;
+	border-color:#999 transparent transparent;
+	position:absolute;
+	left:25%;
+	top:40%
+}
+#reportbox #report_submit td.select_box,#reportbox #report_submit td.report_last {
+	position:relative;
+	clear:both
+}
+#reportbox #report_submit .select_box .error {
+	margin:-8px 0 5px 0
+}
+#reportbox #report_submit .report_last label.checkbox {
+	float:left;
+	margin-right:6px;
+	margin-top:0;
+	width:10px;
+	height:10px;
+	border:2px solid #e0e0e0;
+	background:#fff
+}
+#reportbox #report_submit .report_last label.checkbox:hover {
+	border:2px solid #91cebe
+}
+#reportbox #report_submit .report_last label.checkbox input[type=checkbox] {
+	width:17px;
+	height:17px;
+	margin:0;
+	border:0;
+	position:absolute;
+	left:-2px;
+	top:-2px;
+	filter:alpha(opacity=0);
+	-moz-opacity:0;
+	opacity:0
+}
+#reportbox #report_submit .report_last label.checkbox i {
+	display:block;
+	background:url(//static.lagou.com/www/static/job-detail/modules/popup/img/report_select_56bef7b.png) 0 0 no-repeat;
+	width:17px;
+	height:14px;
+	position:absolute;
+	left:0;
+	top:-5px
+}
+#reportbox #report_submit .report_last span {
+	display:block;
+	height:100%;
+	line-height:14px;
+	color:#999;
+	font-size:14px
+}
+#reportbox #report_submit .report_last span.report_txt {
+	position:absolute;
+	right:4px;
+	top:0
+}
+#reportbox #report_submit .report_last span.report_txt b {
+	color:#ff7575;
+	font-weight:400
+}
+#reportbox #report_submit .reason_content {
+	display:none;
+	position:absolute;
+	left:0;
+	top:38px;
+	width:348px;
+	*width:341px;
+	border:2px solid #91cebe;
+	z-index:10;
+	background:#fff
+}
+#reportbox #report_submit .reason_content ul {
+	list-style:none;
+	margin:0;
+	padding:0
+}
+#reportbox #report_submit .reason_content ul li {
+	font-size:14px;
+	padding:5px 10px;
+	cursor:pointer;
+	line-height:22px
+}
+#reportbox #report_submit .reason_content ul li:hover {
+	background:#91CEBE;
+	color:#fff
+}
+#reportbox #report_submit #problem_txt+span.error {
+	margin:-3px 0 5px 0
+}
+#reportbox #report_submit .anonymous_submit {
+	width:77px;
+	cursor:default
+}
+#reportbox #report_submit .sure_submit {
+	float:right;
+	color:#fff;
+	margin:0;
+	*margin:5px 5px 0 0;
+	line-height:37px;
+	font-size:20px;
+	background:#00b38a;
+	padding:0 20px;
+	*padding:0 10px;
+	display:inline-block;
+	text-align:center;
+	height:37px;
+	transition:background-color .4s ease-out
+}
+#reportbox #report_submit .sure_submit:hover {
+	background:#00a57f
+}
+#receive_report,#has_report {
+	position:relative
+}
+#receive_report h2,#has_report h2 {
+	color:#333;
+	font-size:18px;
+	line-height:30px
+}
+#has_report h2 {
+	text-align:center
+}
+#receive_report a,#has_report a {
+	position:absolute;
+	left:50%;
+	bottom:40px;
+	margin-left:-40px;
+	display:block;
+	color:#fff;
+	line-height:37px;
+	font-size:20px;
+	background:#00b38a;
+	padding:0 25px;
+	text-align:center;
+	height:37px;
+	transition:background-color .4s ease-out
+}
+#receive_report a:hover,#has_report a:hover {
+	background:#00a57f
+}
+#upperLimit .upper_msg {
+	font-size:24px;
+	font-weight:400;
+	background:url(//static.lagou.com/www/static/job-detail/modules/popup/img/lb_error_5b0bf87.png) 0 5px no-repeat;
+	padding-left:45px;
+	width:380px;
+	margin:0 auto 10px;
+	text-align:left;
+	min-height:29px;
+	line-height:36px
+}
+#upperLimit .upper_msg i {
+	color:#E46A4A;
+	font-style:normal
+}
+#upperLimit .upper_txt {
+	font-size:18px;
+	color:#555;
+	text-indent:25px
+}
+#upperLimit .btn_upper {
+	font-size:20px;
+	background:#00b38a;
+	padding:0 15px;
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+	height:37px;
+	color:#fff;
+	border:0;
+	line-height:37px;
+	transition:background .2s ease-in 0s;
+	margin-left:77px
+}
+#upperLimit .upper_close {
+	font-size:20px;
+	background:#00b38a;
+	padding:0 34px;
+	text-decoration:none;
+	display:inline-block;
+	text-align:center;
+	height:37px;
+	color:#fff;
+	border:0;
+	line-height:37px;
+	transition:background .2s ease-in 0s;
+	margin-left:65px
+}
+#upperLimit .btn_upper:hover {
+	background:#00a57f
+}
+#upperLimit .upper_close:hover {
+	background:#00a57f
+}
+#no_interest h2 {
+	text-align:center
+}
+#no_interest span {
+	cursor:pointer;
+	font-size:16px
+}
+#no_interest .btn_wrap {
+	text-align:center;
+	margin-top:25px
+}
+#no_interest .little_interest {
+	background-color:#00b38a;
+	color:#fff;
+	padding:5px 10px;
+	margin-right:40px;
+	transition:background .2s ease-in 0s
+}
+#no_interest .little_interest:hover {
+	background:#00a57f
+}
+#no_interest .no_interest_ensure:hover {
+	color:#00b38a
+}
+#closeplus {
+	text-align:center
+}
+#basicInfoForm .redstar {
+	color:#fe6161;
+	padding:0 5px;
+	margin:15px 0 0 10px;
+	display:block
+}
+#basicInfoForm .profile_select_normal {
+	text-align:left;
+	font:18px/46px Arial,"Hiragino Sans GB","Microsoft Yahei",SimSun;
+	color:#999;
+	height:46px;
+	padding:0 10px
+}
+#basicInfoForm .profile_select_190 {
+	width:190px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/popup/img/profile_select_190_313c2de.png) center top no-repeat
+}
+#basicInfoForm .profile_select_410 {
+	width:410px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/popup/img/profile_select_410_71e7226.png) center top no-repeat
+}
+#basicInfoForm .profile_select_287 {
+	width:287px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/popup/img/profile_select_287_65a680a.png) center top no-repeat
+}
+#basicInfoForm .profile_select_139 {
+	width:139px;
+	background:url(//static.lagou.com/www/static/job-detail/modules/popup/img/profile_select_139_13065e8.png) center top no-repeat
+}
+#basicInfoForm .select_focus {
+	background-position:center bottom!important
+}
+#basicInfoForm .boxUpDown {
+	position:absolute;
+	z-index:20;
+	border:2px solid #c8e6de;
+	margin-top:-2px;
+	background:#fff
+}
+#basicInfoForm .boxUpDown_139 {
+	width:135px;
+	*margin:44px 0 0 -151px
+}
+#basicInfoForm .boxUpDown_190 {
+	width:186px;
+	*margin:44px 0 0 -194px
+}
+#basicInfoForm .boxUpDown_287 {
+	width:283px;
+	*margin:44px 0 0 -291px
+}
+#basicInfoForm .boxUpDown_340 {
+	width:340px;
+	*margin:44px 0 0 -349px
+}
+#basicInfoForm .boxUpDown_380 {
+	width:376px;
+	*margin:44px 0 0 -384px
+}
+#basicInfoForm .boxUpDown_410 {
+	width:406px;
+	*margin:44px 0 0 -414px
+}
+#basicInfoForm .boxUpDown_596 {
+	width:592px;
+	*margin:44px 0 0 -291px
+}
+#basicInfoForm .boxUpDown ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	max-height:200px;
+	overflow-y:scroll
+}
+#basicInfoForm .boxUpDown ul li {
+	font-size:14px;
+	padding:5px 10px;
+	cursor:pointer;
+	line-height:22px
+}
+#basicInfoForm .boxUpDown ul li:hover {
+	background:#91cebe;
+	color:#fff
+}
+#basicInfoForm #box_expectCity {
+	padding:5px 0
+}
+#basicInfoForm #box_expectCity dl {
+	min-height:30px;
+	margin:3px 0;
+	padding:0;
+	clear:both;
+	overflow:hidden;
+	line-height:28px
+}
+#basicInfoForm #box_expectCity dt {
+	width:68px;
+	color:#019875;
+	font-weight:400;
+	margin:3px 0;
+	*margin-left:-80px;
+	padding-left:12px;
+	position:absolute;
+	float:left
+}
+#basicInfoForm #box_expectCity dd {
+	margin-left:80px;
+	overflow:hidden
+}
+#basicInfoForm #box_expectCity dd span {
+	width:66px;
+	height:28px;
+	font-size:14px;
+	text-align:center;
+	float:left;
+	margin:3px;
+	background-color:#fafafa
+}
+#basicInfoForm #box_expectCity dd span:hover {
+	background-color:#91cebe;
+	color:#fff;
+	cursor:pointer
+}
+/*!job-detail/page/index/main.less*/
+.container {
+	width:1024px;
+	margin:0 auto;
+	padding-bottom:118px
+}
+.content_l {
+	width:696px;
+	background:url(//static.lagou.com/www/static/job-detail/page/index/img/gradient_e624ed8.png) repeat-y;
+	background-position:right;
+	padding-right:52px;
+	padding-top:26px
+}
+.content_r {
+	float:left;
+	width:245px;
+	margin-left:31px;
+	margin-top:45px
+}
+.popular_recom {
+	margin-top:46px
+}
+.job_ad_side {
+	width:245px;
+	margin-top:28px
+}
+.job_ad_side img {
+	width:100%!important
+}
+.join_tc_icon {
+	position:relative
+}
+.allmarch_jd_collect div span {
+	color:#00b38a
+}
+.allmarch_jd_collect div a {
+	color:#663118
+}
+.allmarch_jd_collect div a:hover {
+	text-decoration:underline
+}
+.allmarch_jd_collect .btn_collect {
+	height:43px;
+	margin-top:15px;
+	padding:0 22px;
+	font-size:20px;
+	line-height:43px;
+	background-image:none;
+	display:block;
+	background:#00b38a;
+	cursor:pointer
+}
+.allmarch_jd_collect .btn_collect.disabled {
+	background:#bfbfbf;
+	cursor:default
+}
+#collectSuccess .btn {
+	margin:0 auto
+}
+#lijishoucang {
+	display:none;
+	position:absolute;
+	top:-77px;
+	left:-320px;
+	width:426px;
+	z-index:10;
+	padding:13px 12px 10px 17px;
+	background-color:#fffadc;
+	border:1px solid #f1eccd;
+	color:#6b3119
+}
+#lijishoucang:before {
+	content:"";
+	position:absolute;
+	top:68px;
+	left:377px;
+	display:inline-block;
+	width:0;
+	height:0;
+	border:7px solid transparent;
+	border-top:7px solid #f1eccd
+}
+#lijishoucang:after {
+	content:"";
+	position:absolute;
+	top:67px;
+	left:377px;
+	display:inline-block;
+	width:0;
+	height:0;
+	border:7px solid transparent;
+	border-top:7px solid #fffadc
+}
+#lijishoucang span {
+	color:#00b38a
+}
+#lijishoucang i {
+	position:absolute;
+	top:5px;
+	right:5px;
+	color:#737373;
+	cursor:pointer;
+	-webkit-transition:all .5s;
+	-moz-transition:all .5s;
+	-o-transition:all .5s;
+	-ms-transition:all .5s
+}
+#lijishoucang i:hover {
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	transform:rotate(180deg)
+}
+#lijishoucang a:hover {
+	text-decoration:none
+}
+/*!/common/static/css/base.less*/
+* {
+	outline:0
+}
+body {
+	margin:0;
+	padding:0;
+	font-size:14px;
+	font-family:"Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica;
+	color:#333;
+	word-wrap:break-word;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale
+}
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary {
+	display:block
+}
+progress {
+	display:inline-block;
+	vertical-align:baseline
+}
+a {
+	color:#555;
+	background-color:transparent;
+	text-decoration:none
+}
+a:hover {
+	color:#00b38a
+}
+h1,h2,h3,h4 {
+	margin:10px 0;
+	font-weight:400
+}
+p {
+	margin:0
+}
+p+p {
+	margin-top:10px
+}
+img {
+	border:0;
+	vertical-align:top;
+	display:inline-block
+}
+button,input,optgroup,select,textarea {
+	margin:0;
+	padding:0;
+	border:1px solid #ededed;
+	font-family:"Hiragino Sans GB","Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica
+}
+textarea {
+	overflow:auto
+}
+label,select,button,input[type=button],input[type=reset],input[type=submit],input[type=radio],input[type=checkbox],input[type=file] {
+	cursor:pointer
+}
+input[type=text],input[type=password],textarea {
+	font-family:"Microsoft Yahei",SimSun,Arial,"Helvetica Neue",Helvetica
+}
+table {
+	border-collapse:collapse;
+	border-spacing:0
+}
+th,td {
+	padding:0
+}
+strong {
+	font-weight:400
+}
+em,i {
+	font-style:normal
+}
+dl,dt,dd {
+	margin:0
+}
+::selection {
+	color:#fff;
+	background-color:#00b38a
+}
+::-moz-selection {
+	color:#fff;
+	background-color:#00b38a
+}
+ul,ol {
+	margin:0;
+	padding:0;
+	list-style:none
+}
+.fl {
+	float:left
+}
+.fr {
+	float:right
+}
+.clearfix {
+	*zoom:1
+}
+.clearfix:before,.clearfix:after {
+	content:"";
+	display:table
+}
+.clearfix:after {
+	clear:both
+}

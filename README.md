@@ -12,3 +12,4 @@
 	分别做了分布式配置，将缓存数据临时存储到redis，然后存储到mysql 或则别的数据库
 	
 	
+	 show_data下的showjob 是django下用于显示招聘数据的web程序。
